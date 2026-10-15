@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dossier · Comisión Permanente de Participación Ciudadana</title>
+  <meta name="description" content="Dossier temático de la Gerencia de Gestión Institucional y Participación Ciudadana.">
+  <link rel="icon" href="../assets/img/logos/logo-comision.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Sora:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <style>
+    /* Estilos exclusivos de la plantilla de dossier */
+    .dossier-hero{
+      padding: 9.5rem 4vw 5rem;
+      background:
+        radial-gradient(800px 500px at 90% 0%, rgba(183,139,238,.25), transparent 60%),
+        radial-gradient(700px 500px at 0% 100%, rgba(212,0,127,.12), transparent 55%),
+        linear-gradient(160deg, var(--lila-neblina), var(--blanco));
+    }
+    .dossier-hero__competencia{
+      display:inline-block; background:linear-gradient(120deg,var(--fuscia),var(--lila-vivo));
+      color:var(--blanco); padding:.4rem 1.1rem; border-radius:999px;
+      font-size:.72rem; font-weight:700; letter-spacing:.16em; text-transform:uppercase; margin-bottom:1.4rem;
+    }
+    .dossier-hero h1{
+      font-family:var(--fuente-display); font-weight:600;
+      font-size:clamp(2.2rem,5vw,4rem); line-height:1.08; max-width:22ch;
+    }
+    .dossier-hero h1 em{
+      font-style:italic;
+      background:linear-gradient(100deg,var(--fuscia),var(--lila-vivo));
+      -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+    }
+    .dossier-meta{
+      display:flex; gap:2rem; flex-wrap:wrap; margin-top:1.8rem;
+      font-size:.8rem; letter-spacing:.12em; text-transform:uppercase; color:var(--tinta-suave);
+    }
+    .dossier-meta strong{ color:var(--fuscia); }
+    .volver{
+      position:fixed; top:1.4rem; left:1.4rem; z-index:50;
+      display:inline-flex; align-items:center; gap:.5rem;
+      background:var(--blanco); color:var(--fuscia);
+      padding:.55rem 1.2rem; border-radius:999px; font-size:.8rem; font-weight:700;
+      box-shadow:var(--sombra-sm); letter-spacing:.06em; text-transform:uppercase;
+      transition:transform .3s var(--transicion);
+    }
+    .volver:hover{ transform:translateX(-4px); }
+    .dossier-cuerpo{ padding:1rem 4vw 5.5rem; }
+    .dossier-bloque{
+      margin-bottom:1.8rem; border-radius:var(--radio); padding:2.4rem;
+      background:var(--blanco); border:1px solid var(--lila-suave);
+      box-shadow:0 14px 40px -18px rgba(74,6,55,.15);
+    }
+    .dossier-bloque h2{
+      font-family:var(--fuente-display); font-size:1.7rem; margin-bottom:1rem;
+    }
+    .dossier-bloque h2::before{ content:'✦ '; color:var(--fuscia); }
+    .dossier-bloque p{ color:var(--tinta-suave); font-weight:300; margin-bottom:.9rem; }
+    .dossier-bloque ul{ margin:.6rem 0 .6rem 1.2rem; list-style:'✦  '; color:var(--tinta-suave); }
+    .dossier-bloque li{ margin-bottom:.5rem; font-weight:300; }
+    .dossier-imagenes{ display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:1.2rem; margin-top:1.4rem; }
+    .dossier-imagenes img{ border-radius:var(--radio-sm); box-shadow:0 10px 28px -12px rgba(74,6,55,.3); aspect-ratio:4/3; object-fit:cover; }
+    .dossier-bloque--acento{
+      background:linear-gradient(120deg,var(--fuscia-oscuro),var(--fuscia) 60%,var(--lila-vivo));
+      color:var(--blanco); border:none;
+    }
+    .dossier-bloque--acento h2, .dossier-bloque--acento p{ color:var(--blanco); }
+    .dossier-bloque--acento h2::before{ color:var(--oro-rosa); }
+    .dossier-bloque--acento ul{ color:var(--lila-suave); }
+  </style>
+</head>
+<body>
+
+  <a class="volver" href="../index.html#g-dossieres">← Volver al dossier maestro</a>
+
+  <!-- ★ EDITA AQUÍ: portada del dossier temático ★ -->
+  <section class="dossier-hero">
+    <span class="dossier-hero__competencia">Nombre de la competencia</span>
+    <h1>Título del dossier: una <em>gestión con la comunidad</em></h1>
+    <div class="dossier-meta">
+      <span>Publicado: <strong>Enero 2026</strong></span>
+      <span>Elaborado por: <strong>La Gerencia</strong></span>
+      <span>Estatus: <strong>Vigente</strong></span>
+    </div>
+  </section>
+
+  <main class="dossier-cuerpo contenedor">
+
+    <!-- Bloque 1: contexto -->
+    <article class="dossier-bloque">
+      <h2>Contexto y justificación</h2>
+      <p>Escribe aquí el contexto que motivó este dossier: el momento institucional, la demanda de la comunidad y el encargo que la comisión asumió.</p>
+      <p>Describe el problema público atendido y por qué la participación ciudadana fue la herramienta elegida.</p>
+    </article>
+
+    <!-- Bloque 2: acciones -->
+    <article class="dossier-bloque">
+      <h2>Acciones desarrolladas</h2>
+      <ul>
+        <li>Acción realizada con fechas, lugares y aliados.</li>
+        <li>Otra acción: asambleas, jornadas, mesas técnicas.</li>
+        <li>Acción de seguimiento y evaluación participativa.</li>
+      </ul>
+    </article>
+
+    <!-- Bloque 3: resultados -->
+    <article class="dossier-bloque dossier-bloque--acento">
+      <h2>Resultados y alcance</h2>
+      <p>Sintetiza los logros con cifras verificables: personas atendidas, acuerdos alcanzados, recursos gestionados y beneficios para la comunidad.</p>
+      <ul>
+        <li>Resultado cuantitativo principal.</li>
+        <li>Resultado cualitativo o testimonio destacado.</li>
+      </ul>
+    </article>
+
+    <!-- Bloque 4: evidencia fotográfica -->
+    <article class="dossier-bloque">
+      <h2>Evidencia fotográfica</h2>
+      <p>Coloca las imágenes en <code>../assets/img/galeria/</code> y referéncialas desde aquí.</p>
+      <div class="dossier-imagenes">
+        <img src="../assets/img/galeria/galeria-01.png" alt="Descripción de la evidencia 1">
+        <img src="../assets/img/galeria/galeria-02.png" alt="Descripción de la evidencia 2">
+        <img src="../assets/img/galeria/galeria-03.png" alt="Descripción de la evidencia 3">
+      </div>
+    </article>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__base" style="border:none;">
+      <span>© <span id="anio"></span> Comisión Permanente de Participación Ciudadana</span>
+      <span>Dossier temático · duplica este archivo para crear uno nuevo</span>
+    </div>
+  </footer>
+
+  <script>document.getElementById('anio').textContent = new Date().getFullYear();</script>
+</body>
+</html>

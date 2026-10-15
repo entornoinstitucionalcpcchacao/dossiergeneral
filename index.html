@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dossier Institucional · Comisión Permanente de Participación Ciudadana</title>
+  <meta name="description" content="Dossier digital de la Gerencia de Gestión Institucional y Participación Ciudadana: dossieres, memoria fotográfica y canales oficiales.">
+  <link rel="icon" href="assets/img/logos/logo-comision.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Sora:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader__sello"><span>✦</span></div>
+    <p>Dossier Institucional</p>
+  </div>
+
+  <!-- Cabecera -->
+  <header class="header" id="header">
+    <div class="header__logos">
+      <img id="logo-comision" src="assets/img/logos/logo-comision.png" alt="Logo de la Comisión Permanente de Participación Ciudadana">
+      <span class="header__separador"></span>
+      <img id="logo-concejo" src="assets/img/logos/logo-concejo.png" alt="Logo del Concejo Municipal">
+    </div>
+
+    <nav class="nav" id="nav" aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#g-erencia">La Gerencia</a>
+      <a href="#g-dossieres">Dossieres</a>
+      <a href="#g-galeria">Trayectoria</a>
+      <a href="#g-redes">Redes</a>
+    </nav>
+
+    <a class="header__cta" href="#g-dossieres">Explorar dossieres</a>
+
+    <button class="hamburguesa" id="hamburguesa" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="inicio">
+    <canvas id="lienzo-particulas" aria-hidden="true"></canvas>
+    <div class="hero__contenido">
+      <div>
+        <span class="hero__etiqueta" data-campo="institucion">Concejo Municipal</span>
+        <h1>La participación<br>como <em>obra colectiva</em><br>de la ciudadanía</h1>
+        <p class="hero__descripcion">
+          <span data-campo="gerencia">Gerencia de Gestión Institucional</span> — Dossier digital vivo que
+          documenta, organiza y da cuenta de la gestión de la Comisión Permanente de Participación
+          Ciudadana ante el poder popular y la comunidad.
+        </p>
+        <div class="hero__acciones">
+          <a class="boton boton--primario" href="#g-dossieres">Ver dossieres</a>
+          <a class="boton boton--fantasma" href="#g-galeria">Memoria fotográfica</a>
+        </div>
+      </div>
+      <aside class="hero__tarjeta" aria-label="Documento destacado">
+        <img src="assets/img/hero/hero-portada.png" alt="Portada del dossier destacado">
+        <h3 data-campo="lema">Voces que construyen ciudad</h3>
+        <p>Dossier maestro · Repositorio abierto de la gerencia</p>
+      </aside>
+    </div>
+    <div class="hero__scroll">Desliza</div>
+  </section>
+
+  <!-- Franja desfile -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__pista">
+      <span>Participación Ciudadana</span><span>Transparencia</span><span>Poder Popular</span>
+      <span>Rendición de Cuentas</span><span>Derechos Humanos</span><span>Inclusión</span>
+      <span>Participación Ciudadana</span><span>Transparencia</span><span>Poder Popular</span>
+      <span>Rendición de Cuentas</span><span>Derechos Humanos</span><span>Inclusión</span>
+    </div>
+  </div>
+
+  <!-- La Gerencia -->
+  <section class="seccion" id="g-erencia">
+    <div class="contenedor">
+      <div class="seccion__encabezado revelar">
+        <div>
+          <span class="seccion__numero">01 — Quiénes somos</span>
+          <h2 class="seccion__titulo">Una gerencia al <em>servicio de la vocería popular</em></h2>
+        </div>
+        <p class="seccion__bajada">
+          Articulamos los procesos de participación entre el Concejo Municipal y las estructuras
+          de poder popular, garantizando que cada decisión pública tenga la huella de la comunidad.
+        </p>
+      </div>
+
+      <div class="pilares revelar-hijo">
+        <article class="pilar">
+          <div class="pilar__icono">✦</div>
+          <h3>Misión</h3>
+          <p>Consolidar espacios permanentes de deliberación ciudadana que incidan en las políticas municipales con legitimidad, transparencia y resultados verificables.</p>
+        </article>
+        <article class="pilar">
+          <div class="pilar__icono">✧</div>
+          <h3>Visión</h3>
+          <p>Ser el referente institucional de participación democrática directa, donde la ciudadanía organizada ejerza el protagonismo que le corresponde en la gestión pública local.</p>
+        </article>
+        <article class="pilar">
+          <div class="pilar__icono">❖</div>
+          <h3>Valores</h3>
+          <p>Transparencia, corresponsabilidad, inclusión, respeto a la diversidad y compromiso con el bienestar colectivo como norte de cada acción de la gerencia.</p>
+        </article>
+      </div>
+
+      <div class="cifras revelar" id="rejilla-cifras"><!-- Cifras inyectadas desde js/config.js --></div>
+    </div>
+  </section>
+
+  <!-- Dossieres -->
+  <section class="seccion" id="g-dossieres">
+    <div class="contenedor">
+      <div class="seccion__encabezado revelar">
+        <div>
+          <span class="seccion__numero">02 — Repositorio</span>
+          <h2 class="seccion__titulo">Dossieres de <em>gestión y memoria</em></h2>
+        </div>
+        <p class="seccion__bajada">
+          Cada dossier documenta una competencia de la gerencia. Usa los filtros para navegar por
+          áreas de trabajo; el repositorio crece con cada proceso que acompañamos.
+        </p>
+      </div>
+
+      <div class="filtros" id="filtros" role="group" aria-label="Filtrar dossieres por competencia"></div>
+      <div class="dossieres__rejilla revelar-hijo" id="rejilla-dossieres"><!-- Dossieres inyectados desde js/config.js --></div>
+    </div>
+  </section>
+
+  <!-- Galería / Trayectoria -->
+  <section class="seccion" id="g-galeria">
+    <div class="contenedor">
+      <div class="seccion__encabezado revelar">
+        <div>
+          <span class="seccion__numero">03 — Trayectoria</span>
+          <h2 class="seccion__titulo">Memoria <em>fotográfica</em> del camino</h2>
+        </div>
+        <p class="seccion__bajada">
+          Instantáneas de asambleas, cabildos, formaciones y jornadas que retratan el pulso de la
+          participación a lo largo de nuestra gestión. Haz clic para ampliar.
+        </p>
+      </div>
+      <div class="galeria__muro" id="galeria-muro"><!-- Galería inyectada desde js/config.js --></div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visor de imágenes">
+    <button class="lightbox__btn lightbox__cerrar" id="lightbox-cerrar" aria-label="Cerrar">✕</button>
+    <button class="lightbox__btn lightbox__prev" id="lightbox-prev" aria-label="Imagen anterior">‹</button>
+    <figure class="lightbox__figura">
+      <img id="lightbox-img" src="" alt="">
+      <figcaption id="lightbox-caption"></figcaption>
+    </figure>
+    <button class="lightbox__btn lightbox__next" id="lightbox-next" aria-label="Imagen siguiente">›</button>
+  </div>
+
+  <!-- Redes sociales -->
+  <section class="seccion" id="g-redes">
+    <div class="contenedor">
+      <div class="seccion__encabezado revelar">
+        <div>
+          <span class="seccion__numero">04 — Conecta</span>
+          <h2 class="seccion__titulo">Canales <em>oficiales</em> de la comisión</h2>
+        </div>
+        <p class="seccion__bajada">
+          Sigue la actividad de la gerencia en tiempo real, participa en las consultas digitales
+          y mantente informado sobre los próximos espacios de participación.
+        </p>
+      </div>
+      <div class="redes__rejilla revelar-hijo" id="rejilla-redes"><!-- Redes inyectadas desde js/config.js --></div>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <div class="footer__rejilla">
+      <div>
+        <div class="footer__marca">
+          <img src="assets/img/logos/logo-comision.png" alt="Logo de la comisión">
+          <img src="assets/img/logos/logo-concejo.png" alt="Logo del concejo">
+        </div>
+        <p>
+          Dossier digital de la <span data-campo="gerencia">gerencia</span>. Documento vivo de la
+          <span data-campo="institucion">institución</span>, actualizado por la propia estructura
+          de participación ciudadana.
+        </p>
+      </div>
+      <div>
+        <h4>Secciones</h4>
+        <ul>
+          <li><a href="#g-erencia">La Gerencia</a></li>
+          <li><a href="#g-dossieres">Dossieres</a></li>
+          <li><a href="#g-galeria">Trayectoria</a></li>
+          <li><a href="#g-redes">Redes sociales</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Competencias frecuentes</h4>
+        <ul>
+          <li><a href="#g-dossieres">Participación y consulta</a></li>
+          <li><a href="#g-dossieres">Transparencia y rendición</a></li>
+          <li><a href="#g-dossieres">Organización comunal</a></li>
+          <li><a href="#g-dossieres">Inclusión y derechos</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__base">
+      <span>© <span id="anio"></span> <span data-campo="institucion">Comisión Permanente de Participación Ciudadana</span></span>
+      <span data-campo="lema">Voces que construyen ciudad</span>
+    </div>
+  </footer>
+
+  <button class="ir-arriba" id="ir-arriba" aria-label="Volver arriba">↑</button>
+
+  <script>document.getElementById('anio').textContent = new Date().getFullYear();</script>
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
